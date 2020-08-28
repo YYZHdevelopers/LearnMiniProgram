@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#bfa",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": true
 }
