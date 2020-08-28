@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#bfa",
+  "navigationBarTitleText": "个人中心",
+  "navigationBarTextStyle": "black"
 }

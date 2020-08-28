@@ -3,5 +3,21 @@
     "pages/home/home",
     "pages/about/about"
   ],
-  "sitemapLocation": "sitemap17.json"
+  "sitemapLocation": "sitemap17.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "逍遥游",
+        "iconPath": "pages/picture/home.png",
+        "selectedIconPath": "pages/picture/homg_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "pages/picture/my.png",
+        "selectedIconPath": "pages/picture/my_active.png"
+      }
+    ]
+  }
 }

@@ -1,2 +1,21 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view id="userPic">
+  <open-data type="userAvatarUrl" ></open-data>
+</view>
+
+<view class="message">
+
+  <view class="userMsg">
+    姓名：
+    <open-data type="userNickName" id="userName"></open-data>
+  </view>
+  <view class="userMsg">
+    性别：
+    <open-data type="userGender" id="userGender"></open-data>
+  </view>
+   <view class="userMsg">
+    所在地：
+    <open-data type="userCity" id="userCity"></open-data>
+  </view>
+
+</view>

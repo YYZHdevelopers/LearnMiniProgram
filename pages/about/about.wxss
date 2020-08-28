@@ -1,1 +1,27 @@
 /* pages/about/about.wxss */
+#userPic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #bfa;
+  overflow: hidden;
+  position: absolute;
+  left: 110px;
+  top:30px
+}
+.message{
+  border-top: 1px solid rgb(180, 180, 180);
+  /* margin-left:107px; */
+  position: absolute;
+  top:150px; 
+  width: 320px;
+  text-align: center;
+}
+.userMsg{
+  font-weight: bold;
+  padding: 20px 0;
+  border-bottom:1px solid  rgb(180, 180, 180);
+}
+#userName,#userGender{
+  margin-left: 20px;
+}
