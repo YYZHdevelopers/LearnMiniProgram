@@ -2,3 +2,20 @@
 <text class="title">Hello World</text>
 <button size="mini">你好</button>
 
+<!-- 获取用户信息的第二种方式 -->
+<button 
+        size="mini" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="handelGetuserInfo">
+        获取用户信息
+</button>
+
+<!-- 获取用户信息的第三种方式 -->
+<view class="user">用户名：<open-data type="userNickName" class="userId"></open-data></view>
+<view class="user">头像:
+<view id="userPic"><open-data type="userAvatarUrl" ></open-data></view>
+</view>
+
+<view>name:{{name}}</view>
+
+

@@ -4,3 +4,16 @@
   font-size: 50px;
   background-color: yellow;
 }
+
+.user{
+  color: red;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+.userId{
+  color: yellowgreen;
+}
+#userPic{
+  width: 100px;
+  height: 100px;
+}
