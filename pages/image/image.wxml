@@ -1,0 +1,32 @@
+<!-- 1、基本使用 -->
+<!--    重点：a、image组件可以写成单标签，也可以写成双标签 -->
+<!--          b、image组件有自己默认的大小 320×240 -->
+<!--          c、image组件时行内块级元素 -->
+
+<!-- 2、src:本地路径/远程地址 -->
+<image src="/pages/picture/1.jpg" />
+
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+<!-- 让用户从相册中选择图片并在页面上展示 -->
+<view class="image-view">
+      <image src="{{imagePath}}"/>
+</view>
+<button size="mini" bindtap="handelChooseClick">选择图片</button>
+
+
+<!-- 3、bindload 当图片加载完成后触发 -->
+
+<image wx:for="{{1}}" 
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload="handClick"
+lazy-load/>
+
+<!-- 4、show-menu-by-longpress 长按图片出现识别小程序-->
+<view>
+{{err}}
+<image src="https://i0.hdslb.com/bfs/archive/4ffb44d5bb02214dddabd9bb5adfc29582ab4839.jpg@336w_190h.webp" show-menu-by-longpress binderror="handleErr"></image>
+</view>
+
+<!-- 5、mode图片裁剪、缩放的模式 -->
+
+<image src="https://i0.hdslb.com/bfs/archive/f1a30e02a9b1932005b97008b02ca5f0c6d3c851.jpg@336w_190h.webp" mode="widthFix" id="beautiful_girl"></image>

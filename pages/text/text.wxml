@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+<!-- text组件 -->
+<!-- text组件用于显示文本，类似于span标签，行内元素 -->
+
+<!-- 1、默认情况下，text中的长按是不能选中的 -->
+<!-- selectable:true 此时可被选中 -->
+<text selectable>hello program\n</text>
+
+
+<!-- 2、space决定文本空格的大小 -->
+<text space>this is a private developers\n</text>
+<text space="nbsp">this is a private developers\n</text>
+<!-- 属性ensp:半个中文字符空格大小 -->
+<text space="ensp">this is a private developers\n</text>
+<!-- 属性emsp:一个中文字符空格大小 -->
+<text space="emsp">this is a private developers\n</text>
+
+
+
+<!-- 3、decode:是否解码字体 -->
+<text decode>5 &gt; 3</text>

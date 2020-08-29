@@ -1,0 +1,20 @@
+<!--pages/input/input.wxml-->
+<!-- 1、基本用法：用于接收用户输入的信息 -->
+<input></input>
+
+<!-- 2、type:决定键盘类型 -->
+<input type="number" />
+
+<!-- 3、password: 密码类型 暗文形式 -->
+<input password />
+
+
+<!-- 4、place-holder 占位字符 -->
+<input placeholder="请输入昵称" />
+
+<!-- 5、input事件绑定 -->
+<input bindinput="handinput" 
+      bindfocus="handfocus"
+      bindblur="handblur" type="text" confirm-type="idcard" placeholder="请输入身份证号"/>
+<button id="btn" bindtap="handbtn">提交</button>
+<text>身份证号：{{idcard}}</text>

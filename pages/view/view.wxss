@@ -1,0 +1,23 @@
+/* pages/view/view.wxss */
+.box1{
+  background-color: gray;
+}
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  margin-top:20px; 
+}
+.hover-view{
+  background-color: yellowgreen;
+  font-size: 30px;
+}
+.box3{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  background-color: #bfa;
+}
+.hover-box3{
+  background-color: #ff5777;
+}

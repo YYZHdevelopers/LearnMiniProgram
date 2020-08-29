@@ -1,0 +1,11 @@
+/* pages/image/image.wxss */
+.image-view{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#beautiful_girl{
+  width: 200px;
+  height: 200px;
+}
