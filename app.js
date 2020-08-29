@@ -26,7 +26,12 @@ App({
     // 获取用户信息的第一种方式
     wx.getUserInfo({
       success: function(res) {
-        console.log(res.rawData);
+        console.log(res.userInfo.nickName);
+        if(res.userInfo.gender==1){
+          console.log("男");
+        }else{
+          console.log("女");
+        }
       },
 
     })

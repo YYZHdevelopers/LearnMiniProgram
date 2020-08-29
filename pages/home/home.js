@@ -39,7 +39,7 @@ Page({
   },
    // ----------------------3、监听相关事件--------------------
   handelGetuserInfo(event) {
-    console.log(event);
+    console.log(event.detail.rawData);
   },
   handelViewClick(){
     console.log("name被点击");
