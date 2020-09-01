@@ -1,0 +1,2 @@
+/* pages/webUI/webUI.wxss */
+@import "./style/searchbar.wxss";

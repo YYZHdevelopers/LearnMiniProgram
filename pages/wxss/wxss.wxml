@@ -1,0 +1,32 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 样式的三种写法 -->
+<!-- 1、行内（内联）样式 -->
+<view style="background-color:#C4C4C4;">仰天大笑出门去</view>
+
+<!-- 2、页内样式 -->
+<view class="box1">我辈岂是蓬蒿人</view>
+
+<!-- 3、全局样式 -->
+<view class="contain">桃花依旧笑春风</view>
+
+<!-- 
+    当3种样式作用于同一个组件时，行内元素优先级最高
+    行内样式>页内样式>全局样式 
+-->
+
+
+
+
+<!-- wxss扩展 —— 尺寸单位 -->
+<!-- rpx:可以根据屏幕宽度进行自适应 -->
+<!-- 前端也需要进行配置尺寸的适配：em/rem/vm -->
+<view class="contain1"></view>
+<view class="contain2"></view>
+
+<view class="v1"></view>
+<view class="v2"></view>
+
+<button class="btn">按钮</button>
+<button class="btn1">提交</button>
+
+

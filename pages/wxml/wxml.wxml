@@ -1,0 +1,94 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- template模板引入 -->
+<include src="./../template/header.wxml"/>
+
+
+<view>{{message}}</view>
+
+<view>{{lastname}} {{firstname}}</view>
+
+<!-- mustache语法也可以用三目运算符 -->
+<view> {{age >=18 ? '成年':'未成年'}} </view>
+
+<!-- 动态显示当前时间 -->
+<view>{{nowTime}}</view>
+
+<!-- 点击按钮后改变文字颜色 -->
+<button size="mini" bindtap="handClick" loading>click</button>
+<view class="box {{isActive ? 'active':''}}">山不在高，有仙则名</view>
+
+<view>---------------------条件判断--------------------</view>
+<!-- 根据某些条件来决定组件是否渲染 -->
+<!-- wx:if  true 显示 false 隐藏 -->
+<view wx:if="{{isShow}}">你像天外来物一样求之不得</view>
+
+<!-- wx:elif/wx:else -->
+<view wx:if="{{score>100}}">输入区间有误</view>
+<view wx:elif="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+
+<button size="mini" bindtap="handIncrease">增加6分</button>
+
+<!-- hidden 属性是所有组件默认拥有的 -->
+
+<view hidden="{{flase}}">只更改display:block,不清除组件</view>
+<view wx:if="{{true}}">直接清除组件</view>
+<!-- 
+    wx:if和hidden属性的区别：
+        hidden:将一个组件隐藏起来，但该组件依然存在，更改的是属性display:block
+        wx:if  :将一个组件隐藏起来，该组件是根本不存在的（压根没有创建）
+    选择：
+        如果显示和隐藏切换的频率比较高，选择使用hidden 
+        如果显示和隐藏切换的频率比较低，选择wx:if
+ -->
+
+
+<view>---------------------列表渲染--------------------</view>
+<!-- wx:for基础 -->
+<!-- 1、通过wx:for可以进行遍历数字、字符串、数组 -->
+<view wx:for="{{10}}">{{item}}</view>
+<view wx:for="{{['abc','def','ghi']}}">{{item}}</view>
+<view wx:for="{{[11,12,13]}}">{{item}}</view>
+<!-- 2、block标签 -->
+<block wx:for="{{3}}">
+    <button size="mini">click</button>
+    <view>需求</view>
+</block>
+<!-- block标签用于包裹一组标签   block并不是一个组件，仅仅是一个包装元素-->
+
+<!-- 3、为item、index起名字 -->
+<view wx:for="{{hobby}}" wx:for-item="hobby" wx:for-index="hobbyI" wx:key="hobby">{{hobby}} {{hobbyI}}</view>
+
+<view wx:for="{{number}}" wx:for-item="outer_item" wx:key="outer_item">
+    <view wx:for="{{outer_item}}" wx:for-item="inner_item" wx:key="inner_item">
+        {{inner_item}}
+    </view>
+</view>
+
+
+<!--
+     4、key的作用 
+        提高程序的性能，在只有唯一标识 的情况下使用
+-->
+<view wx:for="{{zim}}"  wx:key="item">{{item}}</view>
+
+
+<view>---------------------wxml导入--------------------</view>
+<!-- 
+    1、template
+    之前小程序不支持自定义组件，为了进行代码的复用而做的技术
+ -->
+
+<!-- 定义模板 -->
+<template  name="contentItem" >
+    <view class="borderBox">
+    <view class="picBox">{{Good}}</view>
+    <text>{{textMessage}}</text>
+    </view>
+</template>
+
+<template is="contentItem" data="{{Good:'袜子',textMessage:'高级商务礼品袜'}}"/>
+<template is="contentItem" data="{{Good:'杯子',textMessage:'星巴克猫爪杯'}}"/>
+<template is="contentItem" data="{{Good:'NIKE',textMessage:'Kobe毒液'}}"/>

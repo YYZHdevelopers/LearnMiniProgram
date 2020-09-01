@@ -1,0 +1,27 @@
+var age="18";
+var Diff=function(num1,num2){
+  var tem;    
+  if(num1>num2){
+    tem=num1
+  }else{
+    tem=num2
+  }
+  return tem;
+}
+
+var priceFromat=function(price,num){
+    // 对num进行判断
+    var num=num||2;
+
+    // 将price转成浮动类型
+    var f_price=parseFloat(price);
+
+    return f_price.toFixed(num);
+}
+
+
+module.exports={
+  age:age,
+  Diff:Diff,
+  priceFromat:priceFromat
+}

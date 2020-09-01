@@ -1,0 +1,25 @@
+/* pages/example/example.wxss */
+.inputBox{
+  border: 2rpx solid black;
+  margin: 20rpx;
+  width: 500rpx;
+}
+.Icon{
+  color: red;
+  margin-left: 20rpx;
+}
+.tipHidden{
+  
+  color:red;
+  font-size: 24rpx;
+  margin: 20rpx;
+}
+.scoreBtn{
+  margin: 20rpx;
+}
+.isShow{
+  margin-left: 20rpx;
+}
+
+
+

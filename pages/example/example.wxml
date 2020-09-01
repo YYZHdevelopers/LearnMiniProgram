@@ -1,0 +1,28 @@
+<!--pages/example/example.wxml-->
+<!-- 
+    设计一个输入框，输入的成绩区间在（0-100分）
+    点击按钮进行校验
+    60以下不及格
+    60-80及格
+    80-90良好
+    90-100良好
+
+    如果超出输入区间则清空文本框，重新输入
+    输入框下出现提示文字
+ -->
+ <view class="tipText">
+ <text class="Icon">*</text>请输入分数（0-100）
+ </view>
+<input class="inputBox" type="number" bindinput="handInput"></input>
+<view hidden="{{isShow}}" class="tipHidden">超出输入区间请重新输入</view>
+<button size="mini" class="scoreBtn" bindtap="handAsk">查询</button>
+
+<view hidden="{{isShow_res}}" class="isShow">
+    <view wx:if="{{score>=90}}">优秀</view>
+    <view wx:elif="{{score>=80}}">良好</view>
+    <view wx:elif="{{score>=60}}">及格</view>
+    <view wx:else>不及格</view>
+</view>
+
+
+

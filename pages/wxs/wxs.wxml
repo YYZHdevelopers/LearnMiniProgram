@@ -1,0 +1,36 @@
+<!-- wxs的两种写法 -->
+<!-- 
+  1、写在内部 
+  -->
+<wxs module="Info">
+  
+  var msg="hello world";
+  var name="YYZH"
+  var sum=function(num1,num2){
+    return num1,num2;
+  }
+  module.exports={
+    msg:msg,
+    name:name,
+    sum:sum
+  }
+
+</wxs>
+
+<view>{{Info.msg}}</view>
+<view>{{Info.name}}</view>
+<view>{{Info.sum(10,20)}}</view>
+
+<!-- 2、写在外部 -->
+<wxs src="./../wxs/wxss.wxs" module="in"></wxs>
+<view>最大数是：{{in.Diff(35,8)}}</view>
+<view>{{in.age}}</view>
+
+<!-- wxs的案例练习 -->
+<!-- 对price进行保留两位小数的操作 -->
+<wxs src="./../wxs/wxss.wxs" module="format"/>
+<view>{{format.priceFromat(price,3)}}</view>
+<view>{{time}}</view>
+
+
+

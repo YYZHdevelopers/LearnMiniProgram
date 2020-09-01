@@ -1,0 +1,8 @@
+.btn{
+  width: 300rpx;
+  height: 100rpx;
+  background-color: pink;
+  color: aqua;
+  display: inline-block;
+  margin-top: 20rpx;
+}

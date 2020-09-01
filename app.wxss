@@ -1,0 +1,29 @@
+@import "./pages/style/btn.wxss";
+
+
+.contain{
+  background-color: lightpink;
+}
+.picBox{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1px solid black;
+}
+.borderBox{
+  width: 200rpx;
+  height: 250rpx;
+  float: left;
+  margin-right: 50rpx;
+}
+.header{
+  width: 850rpx;
+  height: 100rpx;
+  background-color: blueviolet;
+}
+.nav1{
+  display: block;
+  float: left;
+  font-size: 48rpx;
+  margin:16rpx 140rpx;
+  color: aliceblue;
+}

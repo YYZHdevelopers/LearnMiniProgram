@@ -1,5 +1,11 @@
 {
   "pages": [
+    "pages/wxs/wxs",
+    "pages/template/header",
+    "pages/example/example",
+    "pages/wxml/wxml",
+    "pages/webUI/webUI",
+    "pages/wxss/wxss",
     "pages/home/home",
     "pages/about/about"
   ],

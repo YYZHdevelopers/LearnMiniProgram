@@ -1,0 +1,4 @@
+<view class="header">
+    <text class="nav1" id="cod">开发</text>
+    <text class="nav1" id="pho">客服</text>
+</view>

@@ -1,0 +1,30 @@
+/* pages/wxss/wxss.wxss */
+/* 样式导入 */
+@import "./style/box1.wxss";
+@import "./style/contain.wxss";
+/* .box1{
+  background-color: lemonchiffon;
+} */
+/* .contain1{
+  background-color: lightskyblue;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+} */
+/* 
+  自适应单位
+  在iphone6机型中 1px=2rpx
+*/
+/* .contain2{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 40rpx;
+  background-color: olive;
+} */
+.btn1{
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  display: inline-block;
+}
+
