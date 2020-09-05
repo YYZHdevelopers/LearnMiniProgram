@@ -1,4 +1,51 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
-<button size="mini">你好</button>
+<!-- 1、常见的事件类型 -->
+<!-- 事件绑定 -->
+<button bind:tap="handClick">点击</button>
+
+<!-- 某些组件会有自己特性的事件类型 -->
+
+<!-- 常见的一些事件 -->
+<view class="box1"
+    bind:tap="handTap"
+    bind:touchstart="handTouch"
+    bind:touchend="handEnd"
+    bind:touchmove="handMove"
+    bind:longpress="handPress"
+>
+
+</view>
+<!-- 事件对象的解析 -->
+<button id="btn01" bindtap="handStart" bind:touchend="handEndbtn">
+    点击
+</button>
+
+<view id="outer" bindtap="handOuter">
+    外层的view
+    <view id="inner" bindtap="handInner">
+    内层的view
+    </view>
+</view>
+
+<view class="container">
+    <block wx:for="{{title}}" wx:key="index">
+    <view class="item" 
+    data-index="{{index}}"
+    data-item="{{item}}"
+    bindtap="handItemClick">
+    {{item}}
+    </view>
+    </block>
+
+</view>
+
+
+<!-- ---------事件的冒泡和事件捕获-------- -->
+<!-- 当界面产生一个事件时，事件分为捕获阶段和冒泡阶段 -->
+<view class="view1" capture-bind:tap="handCaptureview1" bindtap="handBindview1">
+    <view class="view2" capture-bind:tap="handCaptureview2" bindtap="handBindview2">
+        <view class="view3" capture-bind:tap="handCaptureview3" bindtap="handBindview3"></view>
+    </view>
+</view>
+
 

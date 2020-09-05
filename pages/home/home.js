@@ -5,62 +5,66 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    title:["衣服","鞋子","裤子"]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handClick(){
+    console.log("正在点击");
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handTap(){
+    console.log("handTap");
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handTouch(){
+    console.log("handTouch");
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handEnd(){
+    console.log("handEnd");
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handMove(){
+    console.log("handMove");
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  handPress(){
+    console.log("handPress");
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  // touches用于记录当前有几个手指在小程序上出没对应的触摸点的信息
+  // currentTouches用于记录手指变化的触摸点信息
+  handStart(event){
+    console.log("------------",event);
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  handEndbtn(event){
+    console.log("++++++++++++",event);
+  },
+  // target用于记录产生事件的组件
+  // currentTarget触发事件的组件
+  handInner(event){
+    console.log("***********",event);
+  },
+  handOuter(event){
+    console.log("&&&&&&&&&&&",event);
+  },
+  handItemClick(event){
+      console.log(event);
+      var  dataSet=event.currentTarget.dataset;
+      var item=dataSet.item;
+      var index=dataSet.index;
+      console.log(item,index);
+    },
+    handCaptureview1(){
+      console.log("handCaptureview1");
+    },
+    handBindview1(){
+      console.log("handBindview1");
+    },
+    handCaptureview2(){
+      console.log("handCaptureview2");
+    },
+    handBindview2(){
+      console.log("handBindview2");
+    },
+    handCaptureview3(){
+      console.log("handCaptureview3");
+    },
+    handBindview3(){
+      console.log("handBindview3");
+    },
+  
 })
