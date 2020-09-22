@@ -1,0 +1,4 @@
+<!--component/my1/my1.wxml-->
+<view>
+      <image src="/pic/st.jpg" class="pic"></image>
+</view>

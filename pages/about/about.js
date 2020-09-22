@@ -5,6 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+      counter:0,
+      age:"",
+      time:"",
+      isShow:true
+  },
+  handleinit(event){
+      console.log("++=",event);
+      this.setData({
+          counter:this.data.counter+1,
+          time:event.detail.time,
+          age:event.detail.age
+      })
+  },
+  handelNotice(event){
+      console.log(event);
+  },
+  handelClick(){
+    this.setData({
+        isShow:!this.data.isShow
+    })
 
   },
 

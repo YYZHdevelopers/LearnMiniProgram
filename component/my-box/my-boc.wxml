@@ -1,0 +1,5 @@
+<!--component/my-box/my-boc.wxml-->
+<view class="box1">
+    <view class="img1"></view>
+    <text class="textMsg">{{text}}</text>
+</view>

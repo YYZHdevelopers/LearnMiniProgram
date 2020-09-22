@@ -4,3 +4,15 @@
   font-size: 50px;
   background-color: yellow;
 }
+.pic{
+  width: 300rpx;
+  height: 300rpx;
+  border: 1px solid black;
+}
+.red{
+  color: red;
+}
+.contentclass{
+  margin-left: 20rpx;
+  background-color: aquamarine;
+}

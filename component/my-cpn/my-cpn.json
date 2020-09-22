@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my1":"/component/my1/my1"
+
+  }
+}

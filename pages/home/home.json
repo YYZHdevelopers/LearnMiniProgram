@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-style":"/component/my-style/my-style",
+    "my-prop":"/component/my-prop/my-prop",
+    "my-box":"/component/my-box/my-boc",
+    "my-sel":"/component/my-sel/my-sel"
+  }
 }

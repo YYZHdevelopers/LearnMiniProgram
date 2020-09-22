@@ -1,7 +1,14 @@
 {
   "pages": [
     "pages/home/home",
+    "component/y-yab-control/y-tab-control",
+   
     "pages/about/about"
   ],
+  "usingComponents":{
+    "my-cpn":"/component/my-cpn/my-cpn"
+    
+  },
+
   "sitemapLocation": "sitemap17.json"
 }

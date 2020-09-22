@@ -1,1 +1,6 @@
 /* pages/about/about.wxss */
+.slot3-view{
+  width: 500rpx;
+  height: 100rpx;
+  background-color: aquamarine;
+}

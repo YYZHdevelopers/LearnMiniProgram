@@ -1,2 +1,26 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>当前计数：{{counter}}</view>
+<view>当前时间戳：{{time}}</view>
+<view>开发年龄：{{age}}</view>
+<my-event bind:init="handleinit"/>
+
+<my-tabcontrol titles="{{['衣服','裤子','鞋子']}}"  bind:notice="handelNotice"/>
+
+<!--
+   插槽slot的使用过程
+  组件的插槽也是为了让我们封装的组件更加有扩展性
+ -->
+<my-slot>
+<button size="mini">第一个插槽</button>
+</my-slot>
+
+<view>--------------------------------------------</view>
+
+<button bindtap="handelClick">切换显示</button>
+<block wx:if="{{isShow}}">
+   <my-mslot>
+   <button size="mini" slot="slot1">第二个插槽</button>
+   <slider slot="slot2" value="70"></slider>
+   <view slot="slot3" class="slot3-view"></view>
+   </my-mslot>
+</block>

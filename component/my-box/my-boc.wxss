@@ -1,0 +1,16 @@
+/* component/my-box/my-boc.wxss */
+
+.box1{
+  width: 250rpx;
+  height: 250rpx;
+  /* background-color: blueviolet; */
+  float: left;
+  text-align: center;
+}
+.img1{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1px solid black;
+  margin-left: 20rpx;
+}
+

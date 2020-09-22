@@ -2,3 +2,31 @@
 <text class="title">Hello World</text>
 <button size="mini">你好</button>
 
+<!-- 使用自定义组件 -->
+<my-cpn class="my1"></my-cpn>
+<my-cpn ></my-cpn>
+
+
+<!-- 组件和页面样式细节 -->
+<my-style></my-style>
+
+<!-- --------------------- -->
+<template name="contentItem" class="Fuyong">
+  <image class="pic" src="{{picPath}}"></image>
+  <view class="content">{{dis}}</view>
+</template>
+
+<template is="contentItem" data="{{picPath:'/pic/2.jpeg',dis:'内蒙' }}"></template>
+
+
+<!-- 组件和页面通信 -->
+<my-prop title="不忘初心，牢记使命" titleclass="red" contentclass="contentclass"/>
+<my-prop title="以经济建设为中心" content="决胜全面小康社会"/>
+
+
+<block wx:for="{{textMsg}}" wx:key="index"><my-box text="{{item}}"/></block>
+
+
+<!-- 获取组件对象的方法 -->
+<button size="mini" bindtap="handleIncreaBtn">修改组件数据</button>
+<my-sel id="sel-id" />
