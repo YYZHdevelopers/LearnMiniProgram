@@ -1,1 +1,8 @@
 /* pages/about/about.wxss */
+.shareBtn{
+  width: 100rpx;
+  height: 100rpx;
+}
+.container{
+  width: 100rpx;
+}

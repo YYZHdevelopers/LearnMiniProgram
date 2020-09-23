@@ -2,3 +2,23 @@
 <text class="title">Hello World</text>
 <button size="mini">你好</button>
 
+<!-- 1、Toast -->
+<view>
+<button size="mini" bindtap="handelShowtoast">ShowToast</button>
+</view>
+
+
+<!-- 2、modal -->
+<view>
+<button size="mini" bindtap="handelShowmodal">ShowModal</button>
+</view>
+
+<!-- 3、loading -->
+<view>
+<button size="mini" bindtap="handelShowloading">ShowLoading</button>
+</view>
+
+<!-- 4、actionSheet -->
+<view>
+<button size="mini" bindtap="handelShowAction">ShowAction</button>
+</view>

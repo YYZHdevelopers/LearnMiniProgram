@@ -1,2 +1,8 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600792726950&di=721e0855abbe073bec5a2d36876e57d9&imgtype=0&src=http%3A%2F%2Ft7.baidu.com%2Fit%2Fu%3D3225540498%2C2642373837%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1162%26h%3D1800" mode="aspectFit">
+
+</image>
+
+<button size="mini" open-type="share">
+<image src="/pages/ico/share.png" class="shareBtn"/>
+</button>
