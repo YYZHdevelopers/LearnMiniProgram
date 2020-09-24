@@ -1,4 +1,4 @@
-// pages/about/about.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      console.log(opytions);
+      console.log(options);
   },
 
   /**
@@ -40,7 +40,13 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    var pages=getCurrentPages();
+    var home=pages[pages.length-2];
+    
+    home.setData({
+      hobby:"piano"
 
+    })
   },
 
   /**

@@ -1,7 +1,25 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/detail/detail",
+    "pages/comtent/content"
   ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "主页面",
+      "iconPath": "/pages/ico/home.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "/pages/ico/help.png"
+    }
+  ]
+    
+      
+    
+  },
   "sitemapLocation": "sitemap17.json"
 }

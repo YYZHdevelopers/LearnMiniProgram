@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<navigator url="/pages/comtent/content">跳转到评论页</navigator>
+
+<navigator open-type="navigateBack" delta="1">返回到首页</navigator>
